@@ -1,0 +1,15 @@
+/home/lucas/RiderProjects/Wars/Wars/bin/Debug/net6.0/Wars
+/home/lucas/RiderProjects/Wars/Wars/bin/Debug/net6.0/Wars.deps.json
+/home/lucas/RiderProjects/Wars/Wars/bin/Debug/net6.0/Wars.runtimeconfig.json
+/home/lucas/RiderProjects/Wars/Wars/bin/Debug/net6.0/Wars.dll
+/home/lucas/RiderProjects/Wars/Wars/bin/Debug/net6.0/ref/Wars.dll
+/home/lucas/RiderProjects/Wars/Wars/bin/Debug/net6.0/Wars.pdb
+/home/lucas/RiderProjects/Wars/Wars/obj/Debug/net6.0/Wars.csproj.AssemblyReference.cache
+/home/lucas/RiderProjects/Wars/Wars/obj/Debug/net6.0/Wars.GeneratedMSBuildEditorConfig.editorconfig
+/home/lucas/RiderProjects/Wars/Wars/obj/Debug/net6.0/Wars.AssemblyInfoInputs.cache
+/home/lucas/RiderProjects/Wars/Wars/obj/Debug/net6.0/Wars.AssemblyInfo.cs
+/home/lucas/RiderProjects/Wars/Wars/obj/Debug/net6.0/Wars.csproj.CoreCompileInputs.cache
+/home/lucas/RiderProjects/Wars/Wars/obj/Debug/net6.0/Wars.dll
+/home/lucas/RiderProjects/Wars/Wars/obj/Debug/net6.0/ref/Wars.dll
+/home/lucas/RiderProjects/Wars/Wars/obj/Debug/net6.0/Wars.pdb
+/home/lucas/RiderProjects/Wars/Wars/obj/Debug/net6.0/Wars.genruntimeconfig.cache
