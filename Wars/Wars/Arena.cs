@@ -35,8 +35,6 @@ namespace Wars
                 Battle();
                 Console.WriteLine(CardAmountCheck());
                 WinCheck();
-                TieCheck();
-                RoundCheck();
                 if (gameOn)
                 {
                     Console.WriteLine("Next Round!\n----------------------------\n");
@@ -57,7 +55,7 @@ namespace Wars
             else if (playerCard.number > cpuCard.number)
             {
                 Console.WriteLine($"\n{player.name} won!\n");
-                switch (rand.Next(1))
+                switch (rand.Next(2))
                 {
                     case 0:
                         player.AddCard(playerCard);
@@ -73,7 +71,7 @@ namespace Wars
             else
             {
                 Console.WriteLine("\nCPU won!\n");
-                switch (rand.Next(1))
+                switch (rand.Next(2))
                 {
                     case 0:
                         cpu.AddCpuCard(playerCard);
@@ -91,23 +89,13 @@ namespace Wars
         {
             bool drawOn = true;
             List<Card> bank = new List<Card>();
-
-            WinCheckDraw();
             bank.Add(playerCard);
             bank.Add(cpuCard);
             Console.Write("Players put cards to the bank\n");
             while (drawOn)
             {
-                if (!WinCheckDraw())
-                {
-                    break;
-                }
                 bank.Add(player.getCardFromTheTop());
                 bank.Add(cpu.getCard());
-                if (!WinCheckDraw())
-                {
-                    break;
-                }
                 Console.WriteLine("Player draws card");
                 Card playerDrawCard = player.getCardFromTheTop();
                 Card cpuDrawCard = cpu.getCard();
@@ -177,35 +165,6 @@ namespace Wars
             return
                 $"{player.name} has {player.playerHand.Count} cards.\nCPU has {cpu.cpuRoboticHand.Count} cards. \n";
         }
-
-        private void TieCheck()
-        {
-            if ((player.playerHand.Count == 26) 
-                || (player.playerHand.Count == 25) 
-                || player.playerHand.Count == 27)
-            {
-                tieCount++;
-            }
-            else
-            {
-                tieCount = 0;
-            }
-
-            if (tieCount == 100)
-            {
-                gameOn = false;
-                Console.Write("Its a tie!!\nGame Over");
-            }
-        }
-
-        private void RoundCheck()
-        {
-            roundNumber++;
-            if (roundNumber == 1500)
-            {
-                gameOn = false;
-                Console.WriteLine("1500 turns Passed! It's a draw!!\nGame Over");
-            }
-        }
+        
     }
 }
